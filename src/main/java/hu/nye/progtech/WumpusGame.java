@@ -322,6 +322,7 @@ public class WumpusGame {
             addElement(doc, rootElement, "HeroFacing", String.valueOf(heroFacing));
             addElement(doc, rootElement, "ArrowCount", String.valueOf(arrowCount));
             addElement(doc, rootElement, "StepCount", String.valueOf(stepCount));
+            addElement(doc, rootElement, "Score", String.valueOf(points));
 
             // Save the XML file
             TransformerFactory transformerFactory = TransformerFactory.newInstance();
