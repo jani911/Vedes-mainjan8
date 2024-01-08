@@ -30,7 +30,10 @@ public class WumpusGame {
     private static char heroFacing;
     private static int arrowCount;
     private static int stepCount;
+
+    static int points = 100;
     private static Map<String, Integer> scores = new HashMap<>();
+
 
 
     public static void main(String[] args) {
@@ -103,6 +106,7 @@ public class WumpusGame {
             WumpusGame.heroFacing = heroFacing;
             WumpusGame.arrowCount = arrowCount;
             WumpusGame.stepCount = stepCount;
+            WumpusGame.points = points;
 
 
         } catch (Exception e) {
@@ -157,7 +161,7 @@ public class WumpusGame {
             System.out.println();
         }
 
-        System.out.println("Hos Iranya: " + heroFacing + "  Ammo: " + arrowCount + "  Steps: " + stepCount);
+        System.out.println("Hos Iranya: " + heroFacing + "  Ammo: " + arrowCount + "  Steps: " + stepCount +" Pontok " + points );
     }
 
     private static void playGame(String username) {
@@ -211,8 +215,9 @@ public class WumpusGame {
                     displayGameBoard();
                     return;
                 } else if (newLocation == 'G') {
-                    System.out.println("You found the gold. You won!");
+                    System.out.println("You found the gold. You won! \n A pontod: " +points);
                     stepCount++;
+                    points--;
                     scores.put(username, scores.getOrDefault(username, 0) + 1); // Increment the high score
                     break;
                 } else if (newLocation == '_') {
@@ -221,6 +226,7 @@ public class WumpusGame {
                     heroColumn = newColumn;
                     gameBoard[heroRow][heroColumn] = 'H';
                     stepCount++;
+                    points--;
                 } else {
                     System.out.println("You cannot break walls!");
                 }
