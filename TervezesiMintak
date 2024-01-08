@@ -1,0 +1,96 @@
+1. Singleton (Egyke):
+
+    Leírás:
+A Singleton minta garantálja, hogy egy adott osztályból csak egy példány létezik, és biztosít egy globális 
+hozzáférést ehhez a példányhoz.
+Használati eset:
+Tipikusan akkor alkalmazzuk, amikor egy osztálynak egyetlen példányra van szüksége, például globális konfiguráció,
+ naplózás vagy adatbázis kapcsolatok kezelésekor.
+
+2. Factory Method (Gyártó Metódus):
+
+    Leírás:
+   A Factory Method minta lehetővé teszi egy interfésznek számos implementációját, és a megfelelő implementációt 
+a származtatott osztályokban dönti el.
+    Használati eset: Használjuk, amikor egy osztály nem ismeri előre a létrehozandó objektum típusát, és azt a származtatott
+ osztályokra bízza.
+
+3. Observer (Megfigyelő):
+
+    Leírás:
+   Az Observer minta lehetővé teszi egy objektum számára, hogy más objektumok változásait megfigyelje és 
+értesítést kapjon róla.
+    Használati eset:
+   Alkalmazzuk, amikor egy objektum állapotváltozásait más objektumoknak követniük kell, és dinamikusan
+ szeretnénk őket értesíteni a változásokról.
+
+4. Strategy (Stratégia):
+
+    Leírás:
+A Strategy minta lehetővé teszi egy algoritmusok gyűjteményét, és lehetővé teszi azok dinamikus kicserélését a 
+kliens kód számára.
+Használati eset:
+  Használjuk, amikor egy osztálynak lehetősége kell, hogy legyen az alkalmazott algoritmus cseréjére vagy kiválasztására.
+
+5. Decorator (Díszítő):
+
+    Leírás:
+ A Decorator minta dinamikusan kiterjeszti egy osztály funkcionalitását anélkül, hogy módosítaná annak struktúráját.
+ Használati eset:
+ Akkor alkalmazzuk, amikor egy objektumot rugalmasan kiterjeszthetővé szeretnénk tenni anélkül, 
+hogy a kódját módosítanánk.
+
+6. Command (Parancs):
+
+    Leírás:
+  A Command minta lehetővé teszi a parancsokat objektként reprezentálni, és lehetővé teszi a
+ parancsok végrehajtását, visszavonását vagy ütemezését.
+ Használati eset:
+ Akkor alkalmazzuk, amikor egy kliens objektum parancsokat küld egy másik objektumnak, de dinamikusan szeretné 
+konfigurálni azokat.
+
+Ezek a tervezési minták alapvetően segítenek a kód rugalmasságának, karbantarthatóságának és újrafelhasználhatóságának 
+növelésében. Az optimális minta kiválasztása a problémától és a rendszer követelményeitől függ, és ezek kombinálhatók
+is a megfelelő alkalmazás érdekében.
+
+
+A tervezési minták érdekesek és fontosak a szoftvertervezésben, mivel lehetővé teszik a problémák strukturált
+és rugalmas megoldását. Néhány érdekesség a tervezési mintákkal kapcsolatban:
+
+    Előzmények:
+        A tervezési minták kifejezetten az "Object-Oriented Design" (OOA/D) irányzat részei. Az alapokat 
+Christopher Alexander építészeti mintáiból merítették, majd a területre alkalmazták.
+
+    GOF Könyv:
+        A tervezési mintákat a "Gang of Four" (Erich Gamma, Richard Helm, Ralph Johnson és John Vlissides)
+írta le a "Design Patterns: Elements of Reusable Object-Oriented Software" című könyvben. A könyv gyakran egyszerűen
+"GoF" néven emlegetik.
+
+    Típusok és Rétegek:
+        A tervezési mintákat általában három rétegbe sorolják: létrehozó (creational), szerkezeti (structural)
+és viselkedési (behavioral) minták. Ezek a típusok különböző területeken nyújtanak segítséget.
+
+    Java API és Tervezési Minták:
+        A Java API is alkalmaz tervezési mintákat. Például a java.util.Observable és java.util.Observer interfészek 
+alkalmaznak Observer tervezési mintát.
+
+    Anti-patternök:
+        Az anti-patternök olyan minták, amelyek rossz gyakorlatokat, hibákat vagy hatékonysági problémákat 
+képviselnek a tervezés során. Az egyik példa a "Singleton anti-pattern", amely szoros kapcsolatokat és globális
+állapotot eredményezhet.
+
+    Megvalósítási változatosság:
+        Az egyes programozási nyelvek eltérőek lehetnek a tervezési minták implementációjában. Például az egyes 
+nyelvek nem támogathatják a többszörös öröklődést (mint C++), ami befolyásolhatja a minták implementációját.
+
+    Tervezési Minták az Építészetben:
+        A tervezési minták koncepciója eredetileg az építészetből származik, különösen Christopher Alexander munkáiból.
+Az "A Pattern Language" című könyvében olyan építészeti mintákat írt le, amelyek az épületek, települések és környezet
+kialakításában segítenek.
+
+    Nyelvfüggetlenség:
+        A tervezési minták általában nyelvfüggetlenek, tehát nem specifikusak egy adott programozási nyelvhez. 
+Azonban egyes nyelvek sajátosságai és korlátai befolyásolhatják az implementációt.
+
+A tervezési minták alkalmazása lehetővé teszi a fejlesztők számára, hogy hatékonyan és jól karbantarthatóan építsék
+meg a szoftverüket, és segítségükkel hosszú távon is könnyebben fejleszthető rendszereket hozhatnak létre.
