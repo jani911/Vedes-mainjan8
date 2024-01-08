@@ -99,6 +99,7 @@ public class WumpusGame {
             char heroFacing = getElementValue(rootElement, "HeroFacing").charAt(0);
             int arrowCount = Integer.parseInt(getElementValue(rootElement, "ArrowCount"));
             int stepCount = Integer.parseInt(getElementValue(rootElement, "StepCount"));
+            int points = Integer.parseInt(getElementValue(rootElement, "Score"));
 
             // Update game state
             WumpusGame.heroRow = heroRow;
@@ -208,10 +209,10 @@ public class WumpusGame {
             if (isValidMove(newRow, newColumn)) {
                 char newLocation = gameBoard[newRow][newColumn];
                 if (newLocation == 'P') {
-                    System.err.println("You stepped into a pit. You lost an arrow.");
+                    System.out.println("You stepped into a pit. You lost an arrow.");
                     arrowCount--;
                 } else if (newLocation == 'U') {
-                    System.err.println("You were eaten by the Wumpus!");
+                    System.out.println("You were eaten by the Wumpus!");
                     displayGameBoard();
                     return;
                 } else if (newLocation == 'G') {

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <WumpusGame>
     <HeroRow>2</HeroRow>
-    <HeroColumn>2</HeroColumn>
-    <HeroFacing>S</HeroFacing>
-    <ArrowCount>2</ArrowCount>
-    <Points>100</Points>
-    <StepCount>10</StepCount>
+    <HeroColumn>3</HeroColumn>
+    <HeroFacing>N</HeroFacing>
+    <ArrowCount>1</ArrowCount>
+    <StepCount>3</StepCount>
+    <Score>100</Score>
 </WumpusGame>

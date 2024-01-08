@@ -5,4 +5,5 @@
     <HeroFacing>S</HeroFacing>
     <ArrowCount>1</ArrowCount>
     <StepCount>8</StepCount>
+	<Score>100</Score>
 </WumpusGame>
