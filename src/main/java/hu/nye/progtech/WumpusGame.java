@@ -245,7 +245,7 @@ public class WumpusGame {
             while (isValidMove(arrowRow, arrowColumn)) {
                 char target = gameBoard[arrowRow][arrowColumn];
                 if (target == 'W') {
-                    System.err.println("Critical failure! You missed!.");
+                    System.out.println("Critical failure! You missed!.");
                     break;
                 } else if (target == 'U') {
                     gameBoard[arrowRow][arrowColumn] = '_';
@@ -259,7 +259,7 @@ public class WumpusGame {
             displayGameBoard();
             System.out.println("You hit a wumpus ");
         } else {
-            System.err.println("You have no more arrows-.");
+            System.out.println("You have no more arrows-.");
         }
     }
 
