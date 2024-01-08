@@ -21,7 +21,7 @@ import org.w3c.dom.NodeList;
 import java.sql.*;
 
 public class WumpusGame {
-    private static final String FILE_PATH = "D:\\vedees\\Vedes-main\\src\\main\\java\\hu\\nye\\progtech\\wumpuszinputTest.txt";
+    private static final String FILE_PATH = "D:\\vedees\\Vedes-main\\src\\main\\java\\hu\\nye\\progtech\\mapFromText.txt";
     private static final String HIGH_SCORES_FILE_PATH = "D:\\vedees\\Vedes-main\\src\\main\\java\\hu\\nye\\progtech\\highscores.txt";
     private static final String XML_FILE_PATH = "D:\\vedees\\Vedes-main\\src\\main\\java\\hu\\nye\\progtechsavegame.xml";
     private static char[][] gameBoard;
