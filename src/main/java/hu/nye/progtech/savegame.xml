@@ -3,6 +3,6 @@
     <HeroRow>1</HeroRow>
     <HeroColumn>2</HeroColumn>
     <HeroFacing>S</HeroFacing>
-    <ArrowCount>-1</ArrowCount>
-    <StepCount>7</StepCount>
+    <ArrowCount>1</ArrowCount>
+    <StepCount>8</StepCount>
 </WumpusGame>
